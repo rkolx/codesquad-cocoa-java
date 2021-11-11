@@ -1,33 +1,7 @@
-import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
 public class OddOrEven {
-
-    public static class Player { //static 다시 보자
-        public String playName;
-        public int score;
-
-        public Player(String name, int score) {
-            this.playName = name;
-            this.score = score;
-        }
-
-        public void addScore(int socre) {
-            this.score += socre;
-        }
-
-        public void delScore(int score) {
-            this.score -= score;
-        }
-
-        @Override
-        public String toString() {
-            return "player : " + playName  +
-                    ", score : " + score;
-        }
-    }
-
 
     public static void main(String[] args) {
 
@@ -39,7 +13,7 @@ public class OddOrEven {
         String inputPlayer = sc.next();
 
         Player player = new Player(inputPlayer, 100);
-        Player player1 = new Player("player"+round, 120); //플레이어는 객체 생성할 수 있도록 만들자
+        Player player1 = new Player("player"+round, 120);
 
 
         do {
@@ -53,7 +27,7 @@ public class OddOrEven {
             System.out.println(player+"   vs   "+player1);
 
             Random random= new Random();
-            int randomNumber = random.nextInt(10)+1;
+            int randomNumber = random.nextInt(20)+1;
             System.out.println(randomNumber);//임시
 
             int resultNum = 0;
@@ -76,13 +50,13 @@ public class OddOrEven {
                 player.addScore(bet);
                 player1.delScore(bet);
                 System.out.println("이겼다. 너의 점수는 : "+ player.score);
-                System.out.println("이겼다. 너의 점수는 : "+ player1.score);
+                System.out.println("이겼다. 라이벌 점수는 : "+ player1.score);
 
             }else {
                 player.delScore(bet);
                 player1.addScore(bet);
                 System.out.println("졌다. 너의 점수는 : "+ player.score);
-                System.out.println("이겼다. 너의 점수는 : "+ player1.score);
+                System.out.println("이겼다. 라이벌 점수는 : "+ player1.score);
             }
 
 
@@ -91,6 +65,33 @@ public class OddOrEven {
 
 
     }
+
+    public static class Player { //static 다시 보자
+        public String playName;
+        public int score;
+
+        public Player(String name, int score) {
+            this.playName = name;
+            this.score = score;
+        }
+
+        public void addScore(int score) {
+            this.score += score;
+        }
+
+        public void delScore(int score) {
+            this.score -= score;
+        }
+
+        @Override
+        public String toString() {
+            return "player : " + playName  +
+                    ", score : " + score;
+        }
+    }
+
+
+
 
 
 
