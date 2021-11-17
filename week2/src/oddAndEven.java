@@ -2,29 +2,28 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class oddAndEven {
-    public static void main(String[] args) {
+    public static void main(String[] args) {//메인에서 호출되는애들 public, 클래스 내에서 정리된 메서드는 프라이빗
         GamePlay game = new GamePlay();
         game.registerUser();
         game.gameStart();
     }
 }
 
-
 //플레이어
 class Player {//클래스명 명사로 일반적으로
     public String playName;
     public int score;
 
-    Player(String name, int score) {
+    public Player(String name, int score) {
         this.playName = name;
         this.score = score;
     }
 
-    void addScore(int score) {
+    public void addScore(int score) {
 
         this.score += score;
     }
-    void subScore(int score) {
+    public void subScore(int score) {
         this.score -= score;
     }
 
@@ -37,26 +36,26 @@ class Player {//클래스명 명사로 일반적으로
 
 //게임
 class GamePlay{
-    int round = 1;
+    int round = 1;//선언만 하고 생성자에서 명시해줄것
     Scanner sc = new Scanner(System.in);
     Player me;
     Player you = new Player("Player"+round,120);
 
     // 플레이어 이름 입력 받고 출력
-    void registerUser() {
+    public void registerUser() {
         System.out.println("게임할 이름을 입력해주세요 : ");
         me = new Player(sc.next(),100);
     }
 
 
     //1-20까지 랜덤으로 숫자 하나 뽑기
-    int randomNumber() {
+    private int randomNumber() {
         Random random = new Random();
         return random.nextInt(20)+1;
     }
 
     //홀짝구분하기
-    int oddOrEven() {
+    private int oddOrEven() {
         int resultNum;
         if (randomNumber() % 2 == 0) {
             resultNum = 0;
@@ -67,7 +66,7 @@ class GamePlay{
     }
 
     //홀짝 입력 및 결과 출력
-    void pickAndResult() {
+    private void pickAndResult() {
         int temp = oddOrEven();//임시
 
         System.out.println("이기려고 임시로 보이게 해놨다 : " + temp);//삭제
@@ -94,16 +93,16 @@ class GamePlay{
 
     }
 
-    void gameStart() {
-       do {
-           if (you.score == 0) {
-               round = round + 1;
-               System.out.println("============="+round+"round=====================");
-               you = new Player("player"+round, me.score+100);
-               System.out.println("next plyaer" + round + ": " + you.score);
-           }
-           pickAndResult();
-       } while (me.score != 0 && round < 9);
+    public void gameStart() {
+        do {
+            if (you.score == 0) {
+                round = round + 1;
+                System.out.println("============="+round+"round=====================");
+                you = new Player("player"+round, me.score);
+                System.out.println("next plyaer" + round + ": " + you.score);
+            }
+            pickAndResult();
+        } while (!(me.score == 0) && !(round == 8 && you.score == 0));
 
     }
 
