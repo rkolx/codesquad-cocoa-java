@@ -12,6 +12,8 @@ public class HangeulClock {
         Clock cl = new Clock();
         cl.setHour();
         System.out.println();//임시
+        cl.setMinute();
+        cl.setMinute();
 
     }
 }
@@ -61,6 +63,42 @@ class Clock {
 
             }
         }
+    //분 임시기능
+    public void setMinute() {
+        //String tens = String.valueOf(minute).substring(0,1); //분 십의 자리
+        //String units = String.valueOf(minute).substring(1); //분 일의 자리
+
+        String pattern1 = "m";
+        SimpleDateFormat simple1 = new SimpleDateFormat(pattern1);
+        Integer minute = Integer.parseInt(simple1.format(new Date()));
+
+
+        HashMap<Integer, Integer[]> setDate = new HashMap<>();
+
+        setDate.put(1, new Integer[]{4,1, 5,5});
+        setDate.put(2, new Integer[]{4,2, 5,5});
+        setDate.put(3, new Integer[]{4,3, 5,5});
+        setDate.put(4, new Integer[]{4,4, 5,5});
+        setDate.put(5, new Integer[]{4,5, 5,5});
+        setDate.put(6, new Integer[]{5,1, 5,5});
+        setDate.put(7, new Integer[]{5,2, 5,5});
+        setDate.put(8, new Integer[]{5,3, 5,5});
+        setDate.put(9, new Integer[]{5,4, 5,5});
+
+        setDate.put(0, new Integer[]{3,0, 4,0});
+        setDate.put(12, new Integer[]{4,0, 5,0});
+
+        setDate.put(10, new Integer[]{3,5});
+        setDate.put(20, new Integer[]{3,1, 3,5});
+        setDate.put(30, new Integer[]{3,2, 3,5});
+        setDate.put(40, new Integer[]{3,3, 3,5});
+        setDate.put(50, new Integer[]{3,4, 3,5});
+
+        Integer[] temp1 = setDate.get(minute);
+
+        System.out.println(minute + "분");//임시
+
+    }
 
 
 }
