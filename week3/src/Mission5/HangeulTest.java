@@ -7,7 +7,7 @@ import java.util.HashMap;
 public class HangeulTest {
     public static void main(String[] args) {
 
-        Clock cl = new Clock();
+        ClockTest cl = new ClockTest();
         cl.setHour();
         cl.setMinute();
         cl.print();
@@ -17,7 +17,7 @@ public class HangeulTest {
 
 
 
-class Clock {
+class ClockTest {
 
     final String RESET = "\033[0m";  // Text Reset    public static final String BLACK_BOLD_BRIGHT = "\033[1;90m"; // BLACK
     final String RED_BOLD_BRIGHT = "\033[1;91m";   // RED
