@@ -5,8 +5,10 @@ import java.util.Date;
 import java.util.HashMap;
 
 public class HangeulClock {
+    public static void main(String[] args){
 
 
+    }
 }
 
 class Clock {
@@ -31,24 +33,29 @@ class Clock {
                     {"오", "육", "칠", "팔", "구", "분",}};
 
 
-    public void setHour() {
+    public HashMap<Integer, Integer[]> setHour() {
+        HashMap<Integer, Integer[]> viewHour = new HashMap<>();
+        viewHour.put(1, new Integer[]{0, 0, 2, 5});
+        viewHour.put(2, new Integer[]{0, 1, 2, 5});
+        viewHour.put(3, new Integer[]{0, 2, 2, 5});
+        viewHour.put(4, new Integer[]{0, 3, 2, 5});
+        viewHour.put(5, new Integer[]{0, 4, 0, 5, 2, 5});
+        viewHour.put(6, new Integer[]{1, 0, 1, 1, 2, 5});
+        viewHour.put(7, new Integer[]{1, 2, 1, 3, 2, 5});
+        viewHour.put(8, new Integer[]{1, 4, 1, 5, 2, 5});
+        viewHour.put(9, new Integer[]{2, 0, 2, 1, 2, 5});
+        viewHour.put(10, new Integer[]{2, 2, 2, 5});
+        viewHour.put(11, new Integer[]{2, 2, 2, 3, 2, 5});
+        viewHour.put(12, new Integer[]{2, 2, 2, 4, 2, 5});
+
+        return viewHour;
+    }
+    private void changeColorHour(HashMap<Integer, Integer[]> viewHour) {
         String pattern = "h";
         SimpleDateFormat simple = new SimpleDateFormat(pattern);
         Integer hour = Integer.parseInt(simple.format(new Date()));
 
-        HashMap<Integer, Integer[]> setDate = new HashMap<>();
-        setDate.put(1, new Integer[]{0, 0, 2, 5});
-        setDate.put(2, new Integer[]{0, 1, 2, 5});
-        setDate.put(3, new Integer[]{0, 2, 2, 5});
-        setDate.put(4, new Integer[]{0, 3, 2, 5});
-        setDate.put(5, new Integer[]{0, 4, 0, 5, 2, 5});
-        setDate.put(6, new Integer[]{1, 0, 1, 1, 2, 5});
-        setDate.put(7, new Integer[]{1, 2, 1, 3, 2, 5});
-        setDate.put(8, new Integer[]{1, 4, 1, 5, 2, 5});
-        setDate.put(9, new Integer[]{2, 0, 2, 1, 2, 5});
-        setDate.put(10, new Integer[]{2, 2, 2, 5});
-        setDate.put(11, new Integer[]{2, 2, 2, 3, 2, 5});
-        setDate.put(12, new Integer[]{2, 2, 2, 4, 2, 5});
+        temp1 = viewHour.get(hour);
 
         for (int i = 0; i < temp1.length; i = i + 2) {
             hangeul[temp1[i]][temp1[i + 1]] =
@@ -56,6 +63,59 @@ class Clock {
         }
     }
 
+
+    public HashMap<Integer, Integer[]> setMinute() {
+
+        HashMap<Integer, Integer[]> viewMinute = new HashMap<>();
+        viewMinute.put(0, new Integer[]{5, 5});
+        viewMinute.put(1, new Integer[]{4, 1, 5, 5});
+        viewMinute.put(2, new Integer[]{4, 2, 5, 5});
+        viewMinute.put(3, new Integer[]{4, 3, 5, 5});
+        viewMinute.put(4, new Integer[]{4, 4, 5, 5});
+        viewMinute.put(5, new Integer[]{4, 5, 5, 5});
+        viewMinute.put(6, new Integer[]{5, 1, 5, 5});
+        viewMinute.put(7, new Integer[]{5, 2, 5, 5});
+        viewMinute.put(8, new Integer[]{5, 3, 5, 5});
+        viewMinute.put(9, new Integer[]{5, 4, 5, 5});
+
+        viewMinute.put(10, new Integer[]{3, 5});
+        viewMinute.put(20, new Integer[]{3, 1, 3, 5});
+        viewMinute.put(30, new Integer[]{3, 2, 3, 5});
+        viewMinute.put(40, new Integer[]{3, 3, 3, 5});
+        viewMinute.put(50, new Integer[]{3, 4, 3, 5});
+
+        //setDate.put(0, new Integer[]{3,0, 4,0});
+        //setDate.put(12, new Integer[]{4,0, 5,0});
+
+        return viewMinute;
+    }
+    private void changeColorMinute(HashMap<Integer, Integer[]> viewMinute) {
+        String pattern1 = "m";
+        SimpleDateFormat simple1 = new SimpleDateFormat(pattern1);
+        Integer minute = Integer.parseInt(simple1.format(new Date()));
+
+        if(minute>=10){
+            Integer tens = Integer.parseInt(String.valueOf(minute).substring(0, 1));
+            Integer units = Integer.parseInt(String.valueOf(minute).substring(1));
+            temp1 = viewMinute.get(tens*10);
+            temp2 = viewMinute.get(units);
+
+            for (int i = 0; i < temp1.length; i = i + 2) {
+                hangeul[temp1[i]][temp1[i + 1]] =
+                        PURPLE_BOLD_BRIGHT+hangeul[temp1[i]][temp1[i + 1]]+RESET;
+            }
+            for (int j = 0; j < temp2.length; j = j + 2) {
+                hangeul[temp2[j]][temp2[j + 1]]=
+                        PURPLE_BOLD_BRIGHT+hangeul[temp2[j]][temp2[j + 1]]+RESET;
+            }
+        }else if(minute!=0){
+            temp1 = viewMinute.get(minute);
+            for (int j = 0; j < temp1.length; j = j + 2) {
+                hangeul[temp1[j]][temp1[j + 1]]=
+                        PURPLE_BOLD_BRIGHT+hangeul[temp1[j]][temp1[j + 1]]+RESET;
+            }
+        }
+    }
 
 
     public void ClockView() {
