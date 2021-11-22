@@ -3,7 +3,6 @@ package Mission5;
 public class HangeulClock {
 
 
-
 }
 
 class Clock {
@@ -15,7 +14,6 @@ class Clock {
     final String BLUE_BOLD_BRIGHT = "\033[1;94m";  // BLUE
     final String PURPLE_BOLD_BRIGHT = "\033[1;95m";// PURPLE
     final String CYAN_BOLD_BRIGHT = "\033[1;96m";  // CYAN
-    final String WHITE_BOLD_BRIGHT = "\033[1;97m"; // WHITE
 
     String[][] hangeul =
             {{"한", "두", "세", "네", "다", "섯",},
@@ -24,4 +22,15 @@ class Clock {
                     {"자", "이", "삼", "사", "오", "십",},
                     {"정", "일", "이", "삼", "사", "오",},
                     {"오", "육", "칠", "팔", "구", "분",}};
+
+
+
+    public void ClockView() {
+        for(String[] i : hangeul) {
+            for (String j : i) {
+               System.out.print(j + " ");
+            }
+            System.out.println();
+        }
+    }
 }
