@@ -1,0 +1,19 @@
+
+N	java:S106"9Replace this use of System.out or System.err by a logger.(ƒùµ²
+P	java:S125"<This block of commented-out lines of code should be removed.(¨¥Œ}
+S	java:S106"9Replace this use of System.out or System.err by a logger.(Õß°Œûÿÿÿÿ
+V	java:S125"<This block of commented-out lines of code should be removed.(šÛÆ°ýÿÿÿÿ
+M	java:S106"9Replace this use of System.out or System.err by a logger.(··ƒv
+N	java:S106"9Replace this use of System.out or System.err by a logger.(æØ¾ª
+Q	java:S125"<This block of commented-out lines of code should be removed.(àû®Â
+M
+java:S1128"7Remove this unused import 'java.text.SimpleDateFormat'.(ú¡ÙÛ
+K
+java:S1128"0Remove this unused import 'java.time.LocalDate'.(›‘¬èýÿÿÿÿ
+X
+java:S1128"=Remove this unused import 'java.time.chrono.ChronoLocalDate'.(‘Ë¡°ÿÿÿÿÿ
+H
+java:S1128"-Remove this unused import 'java.util.Arrays'.(î–˜Éüÿÿÿÿ
+A
+java:S1128"+Remove this unused import 'java.util.Date'.(¸…¼ü
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(±¢™ùÿÿÿÿ

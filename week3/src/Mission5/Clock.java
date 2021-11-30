@@ -73,6 +73,7 @@ public class Clock {
         setDate.put(30, new Integer[]{3, 2, 3, 5});
         setDate.put(40, new Integer[]{3, 3, 3, 5});
         setDate.put(50, new Integer[]{3, 4, 3, 5});
+
         //setDate.put(0, new Integer[]{3,0, 4,0});
         //setDate.put(12, new Integer[]{4,0, 5,0});
 

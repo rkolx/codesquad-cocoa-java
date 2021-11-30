@@ -1,0 +1,15 @@
+
+T
+java:S18542"9Remove this useless assignment to local variable "temp1".(øñ›éýÿÿÿÿ
+E
+java:S14812"*Remove this unused "temp1" local variable.(øñ›éýÿÿÿÿ
+N	java:S1064"9Replace this use of System.out or System.err by a logger.(Œ¼±é
+S	java:S1065"9Replace this use of System.out or System.err by a logger.(ÑËŠÎøÿÿÿÿ
+S	java:S1068"9Replace this use of System.out or System.err by a logger.(ÊíýÙýÿÿÿÿ
+V	java:S1259"<This block of commented-out lines of code should be removed.(¼¼£«þÿÿÿÿ
+N	java:S106>"9Replace this use of System.out or System.err by a logger.(ã‰Ï¡
+S	java:S106@"9Replace this use of System.out or System.err by a logger.(ªÓ¼áþÿÿÿÿ
+V	java:S125K"<This block of commented-out lines of code should be removed.(‘ê™óýÿÿÿÿ
+H
+java:S1128"-Remove this unused import 'java.util.Arrays'.(î–˜Éüÿÿÿÿ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(±¢™ùÿÿÿÿ

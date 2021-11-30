@@ -1,0 +1,33 @@
+
+q	java:S116"PRename this field "RESET" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(­ŞöÂúÿÿÿÿ8’ŒíÔÔ/
+}	java:S116"\Rename this field "BLACK_BOLD_BRIGHT" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(—çÃõüÿÿÿÿ8ı°©…Õ/
+{	java:S116"ZRename this field "RED_BOLD_BRIGHT" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(“‰¬Áıÿÿÿÿ8“ŒíÔÔ/
+x	java:S116"\Rename this field "GREEN_BOLD_BRIGHT" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(İÌÕÊ8“ŒíÔÔ/
+y	java:S116"]Rename this field "YELLOW_BOLD_BRIGHT" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¸‹÷Õ8“ŒíÔÔ/
+|	java:S116"[Rename this field "BLUE_BOLD_BRIGHT" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(±ÀØ³ıÿÿÿÿ8“ŒíÔÔ/
+~	java:S116"]Rename this field "PURPLE_BOLD_BRIGHT" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(­…»óıÿÿÿÿ8”ŒíÔÔ/
+|	java:S116"[Rename this field "CYAN_BOLD_BRIGHT" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(óıÇàÿÿÿÿÿ8”ŒíÔÔ/
+x	java:S116"\Rename this field "WHITE_BOLD_BRIGHT" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ŞçÎá8”ŒíÔÔ/
+C
+java:S1170"!Make this final field static too.(­ŞöÂúÿÿÿÿ8”ŒíÔÔ/
+C
+java:S1170"!Make this final field static too.(—çÃõüÿÿÿÿ8€±©…Õ/
+C
+java:S1170"!Make this final field static too.(“‰¬Áıÿÿÿÿ8”ŒíÔÔ/
+>
+java:S1170"!Make this final field static too.(İÌÕÊ8•ŒíÔÔ/
+>
+java:S1170"!Make this final field static too.(¸‹÷Õ8•ŒíÔÔ/
+C
+java:S1170"!Make this final field static too.(±ÀØ³ıÿÿÿÿ8•ŒíÔÔ/
+C
+java:S1170"!Make this final field static too.(­…»óıÿÿÿÿ8•ŒíÔÔ/
+C
+java:S1170"!Make this final field static too.(óıÇàÿÿÿÿÿ8–ŒíÔÔ/
+>
+java:S1170"!Make this final field static too.(ŞçÎá8–ŒíÔÔ/
+W	java:S125Z"<This block of commented-out lines of code should be removed.(„îŸ\8®ŒíÔÔ/
+Z	java:S106z"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ8´ŒíÔÔ/
+U	java:S106~"9Replace this use of System.out or System.err by a logger.(´×š8µŒíÔÔ/
+[	java:S106€"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ8¶ŒíÔÔ/
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(±¢™ùÿÿÿÿ
