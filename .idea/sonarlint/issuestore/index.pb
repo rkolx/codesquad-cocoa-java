@@ -13,3 +13,11 @@ O
 week3/src/Test/HangeulTest.java,e\0\e08adc39bacba0692bf9a7f45790581386926e46
 C
 week4/src/Test.java,d\6\d6feffb926eccd257a179c0841074ad96a9e030f
+I
+week2/src/oddAndEven.java,f\2\f25b2381a7612c781908e4efec9a09b3f6994991
+?
+week4/week4.iml,0\6\06b8929638ee59bbe8a91adc3f76b8396f110267
+?
+week5/week5.iml,6\d\6da6d4968a43b6a6beab000752abb6af5d9bbc4f
+J
+week5/src/Shell/Input.java,7\b\7bd3d3c1c10b6e708edb18a2f22149ab809fab39
