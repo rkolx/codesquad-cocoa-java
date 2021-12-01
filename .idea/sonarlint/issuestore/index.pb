@@ -21,3 +21,9 @@ I
 week5/week5.iml,6\d\6da6d4968a43b6a6beab000752abb6af5d9bbc4f
 J
 week5/src/Shell/Input.java,7\b\7bd3d3c1c10b6e708edb18a2f22149ab809fab39
+H
+week2/src/OddOrEven.java,2\9\29a593132174ddfc0d89d9686da353df139f6a84
+M
+week3/src/Mission5/Clock.java,1\6\16d75ea166c6b2de6fb6d8f7234ceca8c99da61a
+T
+$week3/src/Mission5/HangeulClock.java,5\c\5cf376169c1bcbae41936ac33acdf2e5c3643cdc
